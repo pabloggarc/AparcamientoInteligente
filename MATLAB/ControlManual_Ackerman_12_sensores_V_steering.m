@@ -27,7 +27,7 @@ vel_lineal_ackerman_kmh_max = 30;
 %% CONFIGURACION:
 %*************************************************
 % Configurar IP del ROS_MASTER (Maquina virtual o Robot real)
-ROS_MASTER_IP = '172.20.2.12'
+ROS_MASTER_IP = '192.168.1.41'
 
 %Configurar el incremento de velocidad lineal (km/h) y de ángulo del volante (grados)
 

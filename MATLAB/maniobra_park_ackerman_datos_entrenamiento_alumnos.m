@@ -5,7 +5,7 @@ rosshutdown
 clear all
 close all
 
-rosinit('172.20.2.87')
+rosinit('192.168.1.41')
 
 
 global steering_wheel_angle;
