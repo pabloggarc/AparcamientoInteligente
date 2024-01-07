@@ -1,12 +1,16 @@
-% crear la red 
-neuronas_capa1 = 10;
-neuronas_capa2 = 5;
-net = feedforwardnet([neuronas_capa1, neuronas_capa2]);
+% Carga de datos de entrenamiento
+load("datos.mat"); 
 
-% Entrenar la red
-net = configure(net, inputs', outputs');
-net = train(net, inputs', outputs');
+% Elección del número de neuronas de la capa oculta
+neuronas = floor(size(X, 1) * 0.15 * 0.75); 
 
-% Generar el bloque de Simulink
-Ts = 0.1;  % Tiempo de muestreo
-gensim(net, Ts);
+% Creación de la red
+net = feedforwardnet(neuronas);
+net = configure(net, X', Y');
+
+% Entrenamiento
+net = train(net, X', Y');
+
+% Guardar en local y Simulink
+save("red.mat", "net"); 
+gensim(net); 
