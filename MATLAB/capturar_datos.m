@@ -18,4 +18,4 @@ inputs = [sonar_0_values, sonar_8_values, sonar_9_values, sonar_10_values, sonar
 outputs = [velocidad_lineal_values, velocidad_angular_values];
 
 % Guardar datos
-save("datos_10.mat", "inputs", "outputs"); 
+save("datos_15.mat", "inputs", "outputs"); 

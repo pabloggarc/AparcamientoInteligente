@@ -2,7 +2,7 @@
 load("datos.mat"); 
 
 % Elección del número de neuronas de la capa oculta
-neuronas = floor(size(X, 1) * 0.2 * 0.5); 
+neuronas = floor(size(X, 1) * 0.01); 
 
 % Creación de la red
 net = feedforwardnet(neuronas);

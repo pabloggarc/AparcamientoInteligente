@@ -1,7 +1,7 @@
 X = []; 
 Y = []; 
 
-for i = 1:10
+for i = 1:15
     load(strcat("datos_", num2str(i), ".mat")); 
     X = [X; inputs]; 
     Y = [Y; outputs]; 
